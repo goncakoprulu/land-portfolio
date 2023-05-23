@@ -1,0 +1,61 @@
+<html>
+	<body>
+
+		<div (click)="closeModal()" *ngIf="showModal" [class.hidden]="!showModal" class="modal-background modal">
+			<app-design-projects-modal 
+			[modalTitle]="modalTitle" 
+			[modalContent]="modalContent" 
+			[selectedImageSrc]="selectedImageSrc"
+			[showModal]="showModal" 
+			(closeModal)="closeModal()">
+			</app-design-projects-modal>
+		</div>
+	
+			<h1 class="fade-in">Dijital Tasarımlarım</h1>
+		
+
+		<div class="gd-container">
+
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/4.png')">
+				<img src="assets\images\4.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/5.png')">
+				<img src="assets\images\5.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/6.png')">
+				<img src="assets\images\6.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/7.png')">
+				<img src="assets\images\7.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/8.png')">
+				<img src="assets\images\8.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/9.png')">
+				<img src="assets\images\9.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/10.png')">
+				<img src="assets\images\10.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/11.png')">
+				<img src="assets\images\11.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/12.png')">
+				<img src="assets\images\12.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/13.png')">
+				<img src="assets\images\13.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/14.png')">
+				<img src="assets\images\14.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/15.png')">
+				<img src="assets\images\15.png">
+			</div>
+												
+		</div>
+
+		
+	</body>
+</html>
+

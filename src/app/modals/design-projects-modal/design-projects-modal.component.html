@@ -1,0 +1,8 @@
+<div class="modal">
+  <div class="modal-content">
+    <img [src]="selectedImageSrc" *ngIf="selectedImageSrc" alt="Selected Image">
+    <h1>{{modalTitle}}</h1>
+    <p>{{modalContent}}</p>
+    <button (click)="closeModal()">Close</button>
+  </div>
+</div>

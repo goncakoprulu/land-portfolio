@@ -1,0 +1,71 @@
+        <!-- GİRİŞ SAYFASI -->
+        <html>
+            <body>
+            <section id="section-1">
+                <div class="content-slider">
+                  <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+                  <input type="radio" id="banner2" class="sec-1-input" name="banner">
+                  <input type="radio" id="banner3" class="sec-1-input" name="banner">
+                  <input type="radio" id="banner4" class="sec-1-input" name="banner">
+                  <div class="slider">
+                    <div id="top-banner-1" class="banner">
+                      <div class="banner-inner-wrapper biw1">
+                        <h3>TASARIM<br>ÇALIŞMALARIM</h3>
+                        <!-- <h2>Tasarım<br>Projeleri</h2> -->
+                        <div class="line"></div>
+                        <div class="learn-more-button" (click)="scrollDown()"><a routerLink="/design-projects">Beni Atölyeye Götür</a></div>
+
+                        <div class="Project">
+                          <!-- https://brisseaux.tumblr.com/post/91018371936 -->
+                          <img src="https://45.media.tumblr.com/263e52c5f30e213c099a62a245242289/tumblr_n8bsno0htg1qmzbpoo1_1280.gif" alt="" class="imgMasked" />
+                          <div class="Project-hail"></div>
+                          <div class="Project-hail2"></div>
+                          <p class="Project-name">Gonca Köprülü, hrr</p>
+                        </div>
+
+
+                      </div>
+                    </div>
+                    <div id="top-banner-2" class="banner">
+                      <div class="banner-inner-wrapper biw2">
+                        <h3>YAZILIM<br>ÇALIŞMALARIM</h3>
+                      <!--   <h2>Yazılım<br>Projeleri</h2> -->
+                        <div class="line"></div>
+                        <div class="learn-more-button" (click)="scrollDown()"><a routerLink="/software-projects">Beni Atölyeye Götür</a></div>
+                      </div>
+                    </div>
+                    <div id="top-banner-3" class="banner">
+                      <div class="banner-inner-wrapper biw3">
+                        <h3>AKADEMİK<br>ÇALIŞMALARIM</h3>
+                      <!--   <h2>Akademik<br>Çalışmalar</h2> -->
+                        <div class="line"></div>
+                        <div class="learn-more-button"><a href="#section-6">Beni Atölyeye Götür</a></div>
+                      </div>
+                    </div>
+                    <div id="top-banner-4" class="banner">
+                      <div class="banner-inner-wrapper biw4">
+                        <h3>DİĞER<br>ÇALIŞMALAR</h3>
+                      <!--   <h2>Akademik<br>Çalışmalar</h2> -->
+                        <div class="line"></div>
+                        <div class="social-button">
+                        <a href="https://www.youtube.com/@beks5454" target="_blank">Youtube</a>
+                        <a href="https://www.instagram.com/beksart.ai/" target="_blank">Instagram</a>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <nav>
+                    <div class="controls">
+                      <label for="banner1"><span class="progressbar"><span class="progressbar-fill"></span></span><span>01</span> Tasarım</label>
+                      <label for="banner2"><span class="progressbar"><span class="progressbar-fill"></span></span><span>02</span> Yazılım</label>
+                      <label for="banner3"><span class="progressbar"><span class="progressbar-fill"></span></span><span>03</span> Akademik</label>
+                      <label for="banner4"><span class="progressbar"><span class="progressbar-fill"></span></span><span>04</span> Sosyal Mecralar</label>
+                    </div>
+                  </nav>
+                </div>
+            </section>
+            
+            </body>
+        </html>
+
+        <router-outlet></router-outlet>

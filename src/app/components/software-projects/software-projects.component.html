@@ -1,0 +1,44 @@
+<html>
+	<body>
+
+		<div (click)="closeModal()" *ngIf="showModal" [class.hidden]="!showModal" class="modal-background modal">
+			<app-design-projects-modal 
+			[modalTitle]="modalTitle" 
+			[modalContent]="modalContent" 
+			[selectedImageSrc]="selectedImageSrc"
+			[showModal]="showModal" 
+			(closeModal)="closeModal()">
+			</app-design-projects-modal>
+		</div>
+	
+			<h1 class="fade-in">Yazılım Projelerim</h1>
+		
+
+		<div class="gd-container">
+
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/software/1.png')">
+				<img src="../../../assets/images/software/1.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/software/2.png')">
+				<img src="../../../assets/images/software/2.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/software/3.png')">
+				<img src="../../../assets/images/software/3.png">
+			</div>	
+            <div class="item" (click)="openModal('Space', 'Design', 'assets/images/software/1.png')">
+				<img src="../../../assets/images/software/1.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/software/2.png')">
+				<img src="../../../assets/images/software/2.png">
+			</div>
+			<div class="item" (click)="openModal('Space', 'Design', 'assets/images/software/3.png')">
+				<img src="../../../assets/images/software/3.png">
+			</div>	
+            
+            
+		</div>
+
+		
+	</body>
+</html>
+
